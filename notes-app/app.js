@@ -1,3 +1,7 @@
-const name = require("./utils");
+const validator = require("validator");
 
-console.log("app.js", name);
+console.log("validatorr: ", validator.isEmail("test@gmail.com"));
+
+const getNotes = require("./notes");
+
+console.log("app.js", getNotes());
